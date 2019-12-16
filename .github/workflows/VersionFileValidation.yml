@@ -1,5 +1,8 @@
 name: Validate AVC .version files
-on: [push]
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   validate_version_files:
     runs-on: ubuntu-latest
