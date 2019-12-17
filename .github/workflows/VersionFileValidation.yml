@@ -12,4 +12,6 @@ jobs:
         with:
           fetch-depth: 1
       - name: Validate files
+        with:
+          exclude: 'TestCases/*'
         uses: DasSkelett/AVC-VersionFileValidator@dev
